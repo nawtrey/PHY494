@@ -1,0 +1,19 @@
+#Quadratic Equation
+
+#import complex math module
+import	cmath
+
+#Define cofficient variables
+a = 2
+b = 3
+c = 3
+
+#Calculate Discriminant
+ d = (b**2) - (4*a*c)
+
+ #Find solutions
+ sol1 = (-b-cmath.sqrt(d))/(2*a)
+ sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+ #Print solutions
+ print ("The solutions are {0} and {1}." .format(sol1,sol2))
