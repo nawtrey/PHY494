@@ -1,0 +1,4 @@
+#hello program
+print ("hello!")
+
+print ("good bye")
