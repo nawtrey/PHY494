@@ -1,0 +1,19 @@
+#Guessing game
+
+import random	#Import random package
+
+number = random.randint(1, 1000) #secret integer number between 1 and 1000
+
+guess = int(input("Guess the number: "))
+n_guesses = 1
+
+while guess != number:
+	if guess < number:
+		print("You guessed too low.")
+	elif guess > number:
+		print("You guessed too high.")
+	guess = int(input("Guess again: "))
+	n_guesses += 1
+
+print("The number was", number, "and you guessed it in", n_guesses, "guesses.")
+
